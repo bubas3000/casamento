@@ -340,7 +340,7 @@
 				
 				/* Add styles to the form container */
 				.form-container {
-				  width: 50%;
+				  width: 80%;
 				  height: 100%;
 				  margin-top: 2%;
 				  margin-right: auto;
