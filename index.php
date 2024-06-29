@@ -44,7 +44,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 	<!-- Icomoon Icon Fonts-->
 	<!--<link rel="stylesheet" href="css/icomoon.css">-->
 	<!-- Bootstrap  -->
@@ -312,7 +312,7 @@
 	
 			</script>
 			<style>
-				body {font-family: "Times Regular",serif;}
+				body {font-family: "Cinzel",serif;}
 				* {box-sizing: border-box;}
 				
 				/* The popup form - hidden by default */
@@ -340,7 +340,7 @@
 				
 				/* Add styles to the form container */
 				.form-container {
-				  width: 80%;
+				  width: 50%;
 				  height: 100%;
 				  margin-top: 2%;
 				  margin-right: auto;
@@ -666,4 +666,3 @@
 	<script src="dist/scripts.min.js"></script>
 	</body>
 </html>
-
