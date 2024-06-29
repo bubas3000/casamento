@@ -13,7 +13,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Arial";
+  font-family: "Cinzel";
   line-height: 1.6;
   font-size: 16px;
   background: #fff;
@@ -42,12 +42,12 @@ p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 16px;
   color: #848484;
-  font-family: "Baskervville";
+  font-family: "Cinzel";
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #92c0cd;
-  font-family: "Times Regular";
+  font-family: "Cinzel";
   font-weight: 300;
   margin: 0 0 30px 0;
 }
@@ -411,7 +411,7 @@ figure {
 
 #fh5co-primary-menu > li > .sf-with-ul:after {
   border: none !important;
-  font-family: 'Times Regular';
+  font-family: 'Cinzel';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -437,7 +437,7 @@ figure {
 
 #fh5co-primary-menu > li > ul li > .sf-with-ul:after {
   border: none !important;
-  font-family: 'Times Regular';
+  font-family: 'Cinzel';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -632,7 +632,7 @@ background: #92C0CD;;
 #fh5co-countdown .countdown span {
   margin: 0 50px;
   display: inline-block;
-  font-family: "Times Regular", cursive;
+  font-family: "Cinzel", cursive;
   font-size: 60px;
 }
 
@@ -640,7 +640,7 @@ background: #92C0CD;;
   #fh5co-countdown .countdown span {
     margin: 0 5px;
     display: inline-block;
-    font-family: "Times Regular", cursive;
+    font-family: "Cinzel", cursive;
     font-size: 30px;
   }
 }
