@@ -400,6 +400,10 @@
 				  border: none;
 				  color: rgb(255, 255, 255);
 				  background: rgba(104, 104, 104, 0.6);
+				  appearance: none; /* Removes default styling */
+				  -webkit-appearance: none; /* Removes default styling for Safari */
+			      -moz-appearance: none; /* Removes default styling for Firefox */
+			      border-radius: 0; /* Ensures no rounded corners */
 				}
 
 
