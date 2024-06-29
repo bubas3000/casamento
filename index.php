@@ -361,7 +361,17 @@
 				  color: white;
 				  background: rgba(104, 104, 104, 0.6);
 				}
-				
+				@media screen and (max-width: 768px) {
+					.form-container {
+				  width: 100%;
+				  height: 100%;
+				  margin-top: 2%;
+				  margin-right: auto;
+				  margin-left: auto;
+				  padding: 10px;
+				  background-color: transparent;
+				}
+				}
 				/* When the inputs get focus, do something */
 				.form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container input[type=email]:focus {
 				  background-color:rgba(104, 104, 104, 0.7);
