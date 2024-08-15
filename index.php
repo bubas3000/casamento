@@ -10,7 +10,16 @@
 	<title>Madalena e Afonso</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Casamento Madalena e Afonso" />
-
+    <style>
+        .responsive-line-break {
+            display: inline;
+        }
+        @media (max-width: 767px) { /* Adjust the max-width value based on your needs */
+            .responsive-line-break {
+                display: block;
+            }
+        }
+    </style>
 
   <!-- 
 	//////////////////////////////////////////////////////
@@ -77,7 +86,13 @@
 							<div class="col-md-10 col-md-offset-1">
 								<div class="animate-box">
 								<!--<h1>The Wedding</h1>-->
-									<h2>Madalena <small style="color: white;">e</small> Afonso</h2>
+								<h2>
+									Madalena 
+									<span class="responsive-line-break">
+										<small style="color: white;">e</small>
+									</span>
+									Afonso
+								</h2>
 									<p><span>21.09.2024</span></p> 
 								</div>
 							</div>
@@ -149,10 +164,12 @@
 								<p>Quinta do Castilho - 17h</p>
 								
 								<p><i class="icon-map"></i>Vale de Figueira, 2000-719 Santarém</p>
-								<form action="https://maps.app.goo.gl/9PZfb9n3TqfyoYDk9" method="get" target="_blank">
+								<a href="https://maps.app.goo.gl/9PZfb9n3TqfyoYDk9" target="_blank" class="btn btn-primary btn-block">Mapa</a>
+
+								<!--<form action="https://maps.app.goo.gl/9PZfb9n3TqfyoYDk9" method="get" target="_blank">
 									<button type="submit" class="btn btn-primary btn-block">Mapa</button>
 								</form>
-								<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
 							</div>
 						</div>
 					</div>
@@ -187,7 +204,7 @@
 								<div class="ceremony-bg" style="background-image: url(images/regresso2.jpg);"></div>
 								<p><br>Queremos que seja um dia inesquecível. E também por isso a noite promete ser longa, mas sem preocupações.</br>
 								Para quem precisar de transporte para regressar a casa, pode contactar:</p>
-								<p><strong>Vasco Evangelho: 965 062 987</strong></p>
+								<p><strong>Manuel Maio: 911 110 911</strong></p>
 								<p>Só há uma regra: não ir embora antes de nos dar um abraço!</p>
 							</div>
 						</div>
@@ -234,7 +251,7 @@
 						  </div>
 						  
 						  <script>
-							var images = ['images/Istambul.avif','images/capadocia.jpg','images/praia.jpg'];
+							var images = ['images/praia.jpg','images/mauritius3.jpeg','images/Mauritius.webp'];
 							var currentIndex = 0;
 							var ceremonyBg = document.querySelector('#ceremony-bg');
 						  
@@ -559,7 +576,6 @@
 				e.preventDefault();
 				const submitButton = form.querySelector('button[type="submit"]');
             	submitButton.disabled = true;
-				alert("A enviar sugestão...");
 				const data = new FormData(form);
 				const action = e.target.action;
 				fetch(action, {
@@ -584,9 +600,15 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<h2>Madalena e Afonso</h2>
+							<h2>
+								Madalena 
+								<span class="responsive-line-break">
+									<small style="color: white;">e</small>
+								</span>
+								Afonso
+							</h2>
 							<p>Estamos ansiosos por festejar convosco! Confirmem a vossa presença, até ao dia 21 de agosto.</p>
-							<p>Madalena: +351 910 142 726 | Afonso: +351 915 988 611</p>
+							<p>Madalena: +351 910 142 726 <br> Afonso: +351 915 988 611</p>
 							<button type="submit" class="btn ft" onclick="openForm1()">RSVP</button>
 						</div>
 						<div class="form-popup" id="myForm1">
@@ -634,7 +656,7 @@
 					e.preventDefault();
 					const submitButton = form.querySelector('button[type="submit"]');
             		submitButton.disabled = true;
-					alert("A enviar...");
+					closeForm1();
 					const data = new FormData(form);
 					const action = e.target.action;
 					fetch(action, {
@@ -644,7 +666,6 @@
 					.then(() => {
 						alert("Enviado com sucesso. Muito Obrigado!");
 						form.reset();
-						closeForm1();
 					})
 				});
 				});
